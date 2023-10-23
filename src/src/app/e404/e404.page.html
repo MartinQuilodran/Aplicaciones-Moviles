@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pagina no encontrada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-img class="imagen" src="assets/imagenes/404-error.png"></ion-img>
+  <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active" class="botom">
+    <ion-icon name="home" slot="end"></ion-icon>
+    Volver al Inicio
+  </ion-button>
+  
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pagina no encontrada</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+

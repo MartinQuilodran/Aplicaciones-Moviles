@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <h2>Clase Registrada</h2>
+    <ion-content>
+      <ion-item *ngFor="let hola of hola">
+        <p>{{ hola }}</p>
+      </ion-item>
+      <div *ngIf="usuarioRegistrado">
+        <h1 class="nombre">Nombre Alumno: {{ usuarioRegistrado.nombre }} {{ usuarioRegistrado.apellido }}</h1>
+        <h1 class="rut">Rut: {{ usuarioRegistrado.rut }}</h1>
+        <ion-button (click)=takePhoto()>Foto</ion-button>
+        <ion-card *ngFor="let i of imagenes">
+          <ion-img [src]="i.src"></ion-img>
+        </ion-card>
+      </div>
+    </ion-content>
+    
+</ion-content>
+
+<ion-footer>
+  <h1 class="headerFooter">App</h1>
+</ion-footer>
+<a href="/camera">Crea tu cuenta gratis</a>

@@ -1,0 +1,17 @@
+
+<ion-content [fullscreen]="true">
+  <div>
+    <h1 class="h1Titulo">Bienvenido!</h1>
+  </div>
+  <form action="" [formGroup]="formularioLogin">
+    <div class="containerLogin">
+      <div>
+        <h1 class="h1Bienvenido"></h1>
+        <ion-input formControlName="usuario" label="Usuario" labelPlacement="floating" [counter]="true" maxlength="8" minlength="3"></ion-input>
+        <ion-input formControlName="contraseña" label="Contraseña" type="password" labelPlacement="floating" [counter]="true" maxlength="8"></ion-input>
+        <ion-button (click)="ingresar()" class="buttIngresar" fill="clear" expand="block">Ingresar</ion-button>
+      </div>
+    </div>
+  </form>
+  <a href="/registro">Crea tu cuenta gratis</a>
+</ion-content>

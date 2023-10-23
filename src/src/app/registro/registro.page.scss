@@ -1,0 +1,72 @@
+ion-content::part(background) {
+    background: #fdd1d1;
+}
+
+.nose{
+    color: #fdd1d1;
+}
+
+.aki {
+    font-size: 12px;
+    text-align: center;
+}
+
+.h1Titulo,
+h2 {
+    margin: 0;
+}
+
+.h1Titulo {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.h1Bienvenido {
+    font-size: medium;
+    text-align: center;
+}
+
+.buttRegistrar {
+    width: 90%;
+    justify-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.buttlimpiarCampos {
+    width: 95%;
+    justify-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+ion-button {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 1px 2px 8px #000000;
+}

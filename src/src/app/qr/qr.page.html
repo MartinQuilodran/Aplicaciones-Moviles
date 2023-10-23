@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>qr</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <zxing-scanner #scanner [autostart]="true" (scanSuccess)="handleQrCodeResult($event)" [autofocus]="true" [device]="currentDevice" [tryHarder]="true" [formats]="allowedFormats"></zxing-scanner>
+  <section class="results" *ngIf="qrResultString">
+    <small>Result</small>
+    <strong>{{ qrResultString }}</strong>
+  </section>
+</ion-content>
